@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Go-Jek Test</string>
+    <string name="current_temp">%s&#xb0;</string>
+
+</resources>

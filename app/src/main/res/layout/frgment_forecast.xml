@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+android:background="#F5F6F7">
+
+    <TextView
+            tools:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCurrentTemp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/_96ssp"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_56sdp"/>
+    <TextView
+            tools:text="Banglore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPlaceName"
+            android:textSize="@dimen/_36ssp"
+            android:text="Banglore"
+            android:fontFamily="@font/roboto_thin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCurrentTemp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvData"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:elevation="@dimen/_4sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/_62sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlaceName"
+            tools:listitem="@layout/item_forecast"
+    />
+</android.support.constraint.ConstraintLayout>
