@@ -25,6 +25,7 @@ abstract class BaseActivity : AppCompatActivity() , HasSupportFragmentInjector {
         replaceFragment(savedInstanceState)
 
         //todo
+        //todo
     }
 
     private fun replaceFragment(savedInstanceState: Bundle?) =
