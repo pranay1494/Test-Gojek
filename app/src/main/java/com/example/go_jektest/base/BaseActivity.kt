@@ -23,6 +23,8 @@ abstract class BaseActivity : AppCompatActivity() , HasSupportFragmentInjector {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base_container)
         replaceFragment(savedInstanceState)
+
+        //todo
     }
 
     private fun replaceFragment(savedInstanceState: Bundle?) =
